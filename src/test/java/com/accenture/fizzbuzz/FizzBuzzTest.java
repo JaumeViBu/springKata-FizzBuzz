@@ -20,4 +20,14 @@ class FizzBuzzTest {
         //THEN
         assertEquals("Fizz",sut);
     }
+
+    @Test
+    void executeReturnsBuzzIfNumDivisibleBy5() {
+        //GIVEN
+        var fizzbuzz= new FizzBuzz();
+        //WHEN
+        var sut=fizzbuzz.execute(5);
+        //THEN
+        assertEquals("Buzz",sut);
+    }
 }
