@@ -40,4 +40,14 @@ class FizzBuzzTest {
         //THEN
         assertEquals("FizzBuzz",sut);
     }
+
+    @Test
+    void executeReturnsGivenValueIfNumNonDivisibleBy3Or5() {
+        //GIVEN
+        var fizzbuzz= new FizzBuzz();
+        //WHEN
+        var sut=fizzbuzz.execute(7);
+        //THEN
+        assertEquals("7",sut);
+    }
 }
