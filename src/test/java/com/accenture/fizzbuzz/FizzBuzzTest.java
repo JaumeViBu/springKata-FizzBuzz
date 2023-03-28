@@ -30,4 +30,14 @@ class FizzBuzzTest {
         //THEN
         assertEquals("Buzz",sut);
     }
+
+    @Test
+    void executeReturnsFizzBuzzIfNumDivisibleBy3And5() {
+        //GIVEN
+        var fizzbuzz= new FizzBuzz();
+        //WHEN
+        var sut=fizzbuzz.execute(15);
+        //THEN
+        assertEquals("FizzBuzz",sut);
+    }
 }
