@@ -16,6 +16,4 @@ public class FizzBuzz {
 
        return num%base==0;
     }
-
-    //extract conditions
 }
